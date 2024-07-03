@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navbar {
+  height: 35px;
+  background-color: blueviolet;
+  color: whitesmoke;
+  padding: 20px 20px 20px 20px;
+  font-weight: bolder;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar .site-logo {
+  float: left;
+  margin: 9px;
+}
+
+.navbar .nav-item {
+  display: inline-block;
+  float: right;
+  margin: 9px;
+}
