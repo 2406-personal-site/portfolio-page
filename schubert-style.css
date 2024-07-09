@@ -1,0 +1,158 @@
+/*.navbar {
+
+    height: 50px;
+    background-color: navy; 
+    display: inline-block; 
+}
+
+.nav-item {
+    float: right
+}
+
+.site-logo {
+    float: left;
+}
+*/
+
+* {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+.box {
+  background-color: azure;
+  border: 4px solid rgb(66, 79, 46);
+  margin: 10px;
+  display: block;
+}
+
+.boxchild {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(234, 154, 234);
+  margin: 15px;
+  padding: 5px;
+  border: 2px solid purple;
+  vertical-align: top;
+}
+
+.max {
+  max-width: 184px;
+  padding: 7px;
+}
+
+/*.grocery-list {
+    background-color: rgb(234, 154, 234);
+  }
+  */
+body {
+  background-color: rgb(169, 150, 231);
+  margin: 0;
+}
+
+.navbar {
+  color: aliceblue;
+  box-shadow: 12px;
+  background-color: rgb(50, 12, 97);
+  display: block;
+  height: 35px;
+  padding: 7px;
+  margin: 0px;
+}
+
+.nav-item {
+  float: right;
+  display: inline-block;
+  padding: 7px;
+  height: 20px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.site-logo {
+  color: aliceblue;
+  float: left;
+  display: inline-block;
+  padding: 7px;
+  height: 20px;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  text-align: left;
+  padding: 15px;
+  margin: 10px;
+}
+
+h2 {
+  text-align: left;
+  /*border: solid 4px rgb(63, 47, 118);*/
+  /*background-color: ghostwhite; */
+  padding: 15px;
+  margin: 10px;
+}
+
+li {
+  background-color: transparent;
+}
+
+h3 {
+  text-align: left;
+  background-color: transparent;
+  padding: 15px;
+  margin: 10px;
+}
+
+main > img {
+  /* height: 500px; */
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: auto;
+  float: right;
+  margin: 10px 10px 10px 10px;
+  max-width: 184px;
+  padding: 7px;
+}
+
+main .quote {
+  font-family: cursive;
+  color: aliceblue;
+  font-size: 24px;
+  font-weight: 100;
+  text-shadow: 1px 1px 2px rgb(63, 47, 118);
+  text-align: center;
+  margin-top: 4em;
+}
+
+main p {
+  padding: 15px;
+  margin: 10px;
+}
+
+.about-img-r {
+  max-height: 200px;
+  max-width: auto;
+  aspect-ratio: auto;
+  float: right;
+}
+
+.about-img-l {
+  max-height: 200px;
+  max-width: auto;
+  aspect-ratio: auto;
+  float: left;
+  caption-side: bottom;
+}
+
+.about-h1 {
+  color: rgb(63, 47, 118);
+}
+
+.about-h2 {
+  color: rgb(63, 47, 118);
+}
+
+* {
+  caption-side: bottom;
+}
