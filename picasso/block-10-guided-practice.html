@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Guided Practice</title>
+    <link href="block-10-guided-practice.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Form Follows Function</h1>
+    <form action="submit" target="_blank" method="get">
+      <label for="fname">First Name</label><br />
+      <input type="text" value="Name" /><br />
+      <input type="submit" value="submit" /><br />
+    </form>
+    <section>
+      <h3>Available Desserts</h3>
+      <ol>
+        <li>Cookie</li>
+        <li>Cake</li>
+        <li>Pie</li>
+        <li>Pudding</li>
+      </ol>
+    </section>
+    <section>
+      <fieldset>
+        <legend>Select your dessert:</legend>
+        <div>
+          <input
+            type="radio"
+            id="muffin"
+            name="dessert"
+            value="muffin"
+            checked
+          />
+          <label for="muffin">Muffin</label>
+        </div>
+
+        <div>
+          <input type="radio" id="cupcake" name="dessert" value="cupcake" />
+          <label for="cupcake">Cupcake</label>
+        </div>
+
+        <div>
+          <input type="radio" id="brownie" name="dessert" value="brownie" />
+          <label for="brownie">Brownie</label>
+        </div>
+      </fieldset>
+    </section>
+    <section>
+      <br />
+      <form action="file">
+        <label for="selfie">Choose a profile picture:</label>
+        <input
+          type="file"
+          id="selfie"
+          name="Avatar"
+          accept="image/png, image/jpeg"
+        />
+      </form>
+    </section>
+    <br />
+    <section>
+      <form action="submit" target="_blank" method="get">
+        <label for="submit">Submit</label><br />
+        <input type="text" value="Submit" /><br />
+        <input type="submit" value="Submit" /><br />
+      </form>
+    </section>
+    <p>
+      <a href="#">This is a test paragraph for use with the CSS file. </a>
+    </p>
+  </body>
+</html>
