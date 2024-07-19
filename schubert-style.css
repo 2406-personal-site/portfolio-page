@@ -26,7 +26,7 @@
 }
 
 .boxchild {
-  display: inline-block;
+  display: flex;
   width: 200px;
   height: 200px;
   background-color: rgb(234, 154, 234);
@@ -55,15 +55,19 @@ body {
   color: aliceblue;
   box-shadow: 12px;
   background-color: rgb(50, 12, 97);
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 35px;
   padding: 7px;
   margin: 0px;
 }
 
 .nav-item {
-  float: right;
-  display: inline-block;
+  /* float: right;*/
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
   padding: 7px;
   height: 20px;
   color: aliceblue;
@@ -72,8 +76,10 @@ body {
 
 .site-logo {
   color: aliceblue;
-  float: left;
-  display: inline-block;
+  /*float: left;*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   padding: 7px;
   height: 20px;
   text-decoration: none;
@@ -156,4 +162,41 @@ main p {
 
 * {
   caption-side: bottom;
+}
+
+form {
+  margin-left: 30px;
+}
+
+footer {
+  height: 45px;
+  display: flex;
+  position: sticky;
+  bottom: 0px;
+  justify-content: space-between;
+  margin-left: 0px;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: rgb(50, 12, 97);
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.footer-img {
+  /* height: 500px; */
+  height: 15px;
+  width: auto;
+  aspect-ratio: auto;
+  /*float: right;*/
+  /*margin: 10px 10px 10px 10px;*/
+  max-width: 184px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  align-items: center;
 }
