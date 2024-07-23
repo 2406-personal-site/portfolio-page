@@ -14,6 +14,7 @@
 }
 */
 
+/*Using universal selector for font  */
 * {
   font-family: "Trebuchet MS", Verdana, sans-serif;
 }
@@ -21,11 +22,18 @@
 .box {
   background-color: azure;
   border: 4px solid rgb(66, 79, 46);
+  /* Using proportional units of measure */
+  border-radius: 3rem;
   margin: 10px;
-  display: block;
+  /* Using flex display */
+  display: flex;
+  /* Using proportional units of measure */
+
+  box-sizing: border-box;
 }
 
 .boxchild {
+  /* Using "children" of box model */
   display: flex;
   width: 200px;
   height: 200px;
@@ -33,19 +41,17 @@
   margin: 15px;
   padding: 5px;
   border: 2px solid purple;
+  border-radius: 3rem;
   vertical-align: top;
   align-items: flex-end;
 }
 
 .max {
+  /* Sizing the graphics for the boxes */
   max-width: 184px;
   padding: 7px;
 }
 
-/*.grocery-list {
-    background-color: rgb(234, 154, 234);
-  }
-  */
 body {
   background-color: rgb(169, 150, 231);
   margin: 0;
@@ -56,6 +62,7 @@ body {
   box-shadow: 12px;
   background-color: rgb(50, 12, 97);
   display: flex;
+  /* Using justify-content and align-items in flex boxes */
   justify-content: space-between;
   align-items: center;
   height: 35px;
@@ -63,28 +70,43 @@ body {
   margin: 0px;
 }
 
+.navbar {
+  /* Using transitions */
+  transition: background-color 2s;
+  /*transition: color 2s;*/
+}
+
+.navbar:hover {
+  /* Using hover */
+  background-color: lch(from rgb(50, 12, 97) calc(l + 33) c h);
+}
+
 .nav-item {
-  /* float: right;*/
   display: flex;
-  /*justify-content: space-between;*/
   align-items: center;
   padding: 7px;
   height: 20px;
   color: aliceblue;
   text-decoration: none;
+  /* Using transitions */
+  transition: background-color 0.5s;
+  transition: color 0.5s;
 }
 
 .site-logo {
   color: aliceblue;
-  /*float: left;*/
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 7px;
   height: 20px;
   text-decoration: none;
+  /* Using transitions */
+  transition: background-color 2s;
+  transition: color 2s;
 }
 
+/* Selecting an element on all pages */
 h1 {
   font-family: "Trebuchet MS", Verdana, sans-serif;
   text-align: left;
@@ -92,18 +114,19 @@ h1 {
   margin: 10px;
 }
 
+/* Selecting an element on all pages */
 h2 {
   text-align: left;
-  /*border: solid 4px rgb(63, 47, 118);*/
-  /*background-color: ghostwhite; */
   padding: 15px;
   margin: 10px;
 }
 
 li {
+  /* background has to be transparent to make the styling work */
   background-color: transparent;
 }
 
+/* Selecting an element on all pages */
 h3 {
   text-align: left;
   background-color: transparent;
@@ -112,7 +135,7 @@ h3 {
 }
 
 main > img {
-  /* height: 500px; */
+  /* Sizing image in < main > section  */
   max-width: 300px;
   height: auto;
   aspect-ratio: auto;
@@ -123,6 +146,7 @@ main > img {
 }
 
 main .quote {
+  /* Styling quote as required on "About" page */
   font-family: cursive;
   color: aliceblue;
   font-size: 24px;
@@ -138,26 +162,87 @@ main p {
 }
 
 .about-img-r {
+  /* Making images fit in the box but still have 
+  correct aspect ratio for display */
   max-height: 200px;
   max-width: auto;
   aspect-ratio: auto;
   float: right;
+  padding: 0.7rem;
+  margin: 0.1rem;
 }
 
 .about-img-l {
+  /* Making images fit in the box but still have 
+  correct aspect ratio for display; 
+  class dup[licated for right and left placement */
   max-height: 200px;
   max-width: auto;
   aspect-ratio: auto;
   float: left;
   caption-side: bottom;
+  padding: 0.7rem;
+  margin: 0.1rem;
 }
 
 .about-h1 {
+  /* Selecting class as needed for About page (and elsewhere) */
   color: rgb(63, 47, 118);
 }
 
 .about-h2 {
+  /* Selecting class as needed for About page (and elsewhere) */
   color: rgb(63, 47, 118);
+  padding: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px;
+}
+
+.nav-item:hover {
+  /* Using hover for nav items */
+  color: rgb(50, 12, 97);
+}
+
+.site-logo:hover {
+  /* Using hover for logo (Franz Schubert/Home) */
+  color: rgb(50, 12, 97);
+}
+
+.portfolio-box {
+  background-color: rgb(236, 212, 236);
+  border: 4px solid rgb(111, 49, 226);
+  margin: 1.1rem;
+  display: block;
+  padding: 1.5rem;
+  min-height: 210px;
+  width: calc(75% + 10px);
+  border-radius: 2rem;
+  /*box-sizing: border-box;*/
+}
+
+.portfolio-box:nth-of-type(odd) {
+  background-color: rgb(67, 35, 94);
+  color: aliceblue;
+}
+
+.portfolio-box:nth-of-type(odd) h2 {
+  color: aliceblue;
+}
+
+.portfolio-box:nth-of-type(even) h2 {
+  background-color: rgb(236, 212, 236);
+  color: rgb(67, 35, 94);
+}
+
+/* .about-h2:nth-of-type(odd) {
+  color: aliceblue;
+} */
+
+/* .about-h2:nth-of-type(even) { 
+  color: rgb(50, 12, 97);
+} */
+
+.about-link {
+  color: aliceblue;
 }
 
 * {
